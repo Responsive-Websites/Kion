@@ -1,0 +1,24 @@
+@mixin button($backgroundColor, $backgroundColorHover, $fontColor, $fontColorHover) {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 124%;
+  min-height: 56px;
+  color: $fontColor;
+  background-color: $backgroundColor;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 55px;
+  padding: 0px 25px;
+
+  transition: 0.3s;
+  &:hover {
+    background-color: $backgroundColorHover;
+    color: $fontColorHover;
+    outline: 1px solid $fontColorHover;
+  }
+  & span {
+    color: inherit;
+  }
+}

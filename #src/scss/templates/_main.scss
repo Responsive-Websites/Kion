@@ -1,0 +1,285 @@
+.main {
+  margin-top: 107px;
+  &__heading {
+    background: #f3f7f4;
+  }
+  &__partners {
+  }
+  &__product {
+    padding: 80px 0px;
+    @media screen and (max-width: 992px) {
+      padding: 70px 0px;
+    }
+    @media screen and (max-width: 768px) {
+      padding: 50px 0px;
+    }
+    @media screen and (max-width: 576px) {
+      padding: 40px 0px;
+    }
+  }
+}
+
+.heading {
+  &__container {
+  }
+  &__body {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 142px 0px 131px 0px;
+    @media screen and (max-width: 992px) {
+      padding: 82px 0px 91px 0px;
+    }
+    @media screen and (max-width: 768px) {
+      padding: 62px 0px 61px 0px;
+    }
+    @media screen and (max-width: 576px) {
+      padding: 42px 0px 21px 0px;
+    }
+
+    @media screen and (max-width: 866px) {
+      flex-flow: column-reverse nowrap;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  &__info {
+    flex-shrink: 0;
+    margin-right: 20px;
+    @media screen and (max-width: 866px) {
+      text-align: center;
+      margin-right: 0px;
+    }
+  }
+  &__label {
+    margin-bottom: 44px;
+    @media screen and (max-width: 866px) {
+      margin-bottom: 24px;
+    }
+  }
+  &__text {
+    font-size: 21px;
+    line-height: 148%;
+    color: #40494d;
+    font-weight: 400;
+    max-width: 347px;
+    margin-bottom: 26px;
+    @media screen and (max-width: 866px) {
+      margin: 0 auto;
+      margin-bottom: 20px;
+    }
+    @media screen and (max-width: 992px) {
+      font-size: 19px;
+    }
+    @media screen and (max-width: 768px) {
+      font-size: 18px;
+    }
+    @media screen and (max-width: 576px) {
+      font-size: 17px;
+    }
+  }
+  &__button {
+    @include button(#283337, #ffffff, #ffffff, #283337);
+    padding: 0px 50px;
+  }
+  &__image {
+    max-width: 630px;
+    & img {
+      width: 100%;
+    }
+    @media screen and (max-width: 866px) {
+      margin-bottom: 20px;
+      max-width: 300px;
+    }
+  }
+}
+
+.partners {
+  padding: 40px 0px;
+  background: #f3f7f4;
+  @media screen and (max-width: 796px) {
+    padding: 30px 0px;
+  }
+  @media screen and (max-width: 566px) {
+    padding: 25px 0px;
+  }
+  @media screen and (max-width: 388px) {
+    padding: 20px 0px;
+  }
+  &__container {
+  }
+  &__body {
+  }
+  &__images {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__icon {
+    &:not(:last-child) {
+      margin-right: 100px;
+      @media screen and (max-width: 796px) {
+        margin-right: 50px;
+      }
+      @media screen and (max-width: 566px) {
+        margin-right: 30px;
+      }
+      @media screen and (max-width: 388px) {
+        margin-right: 20px;
+      }
+    }
+    max-width: 200px;
+    & img {
+      width: 100%;
+    }
+  }
+}
+
+.product {
+  &__container {
+  }
+  &__body {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    @media screen and (max-width: 1000px) {
+      flex-flow: column nowrap;
+
+      align-items: center;
+    }
+  }
+  &__info {
+    padding-right: 30px;
+    @media screen and (max-width: 1000px) {
+      margin-bottom: 30px;
+      text-align: center;
+      padding-right: 0px;
+    }
+  }
+  &__label {
+    font-size: 60px;
+    line-height: 100%;
+    letter-spacing: 1px;
+    font-family: "Times New Roman", Times, serif;
+    color: #283337;
+    margin-bottom: 28px;
+
+    @media screen and (max-width: 1000px) {
+      margin-bottom: 23px;
+    }
+    @media screen and (max-width: 992px) {
+      font-size: 40px;
+    }
+    @media screen and (max-width: 768px) {
+      font-size: 35px;
+    }
+    @media screen and (max-width: 576px) {
+      font-size: 30px;
+    }
+  }
+  &__text {
+    color: #40494d;
+    max-width: 365px;
+    font-size: 17px;
+    line-height: 153%;
+    & span {
+      text-decoration-line: underline;
+      font-weight: 600;
+    }
+    margin-bottom: 39px;
+    @media screen and (max-width: 992px) {
+      font-size: 16px;
+    }
+    @media screen and (max-width: 768px) {
+      font-size: 15px;
+    }
+    @media screen and (max-width: 1000px) {
+      margin: 0 auto;
+      margin-bottom: 25px;
+    }
+  }
+  &__button {
+    @include button(#283337, #ffffff, #ffffff, #283337);
+  }
+  &__preview {
+    padding: 80px;
+    background: #f3f7f4;
+    border-radius: 6px;
+    margin-right: 80px;
+
+    @media screen and (max-width: 1116px) {
+      margin-right: 0px;
+    }
+    @media screen and (max-width: 1000px) {
+      width: 100%;
+      padding: 60px;
+    }
+
+    @media screen and (max-width: 768px) {
+      padding: 40px;
+    }
+    @media screen and (max-width: 576px) {
+      padding: 20px;
+    }
+  }
+  &__icon {
+    width: 90px;
+    margin-bottom: 27px;
+    & img {
+      width: 100%;
+    }
+    @media screen and (max-width: 576px) {
+      width: 70px;
+    }
+  }
+  &__subLabel {
+    font-size: 32px;
+    line-height: 106%;
+    color: #283337;
+    margin-bottom: 51px;
+    max-width: 203px;
+    @media screen and (max-width: 992px) {
+      font-size: 28px;
+      margin-bottom: 43px;
+    }
+    @media screen and (max-width: 768px) {
+      font-size: 26px;
+      margin-bottom: 33px;
+    }
+    @media screen and (max-width: 576px) {
+      font-size: 24px;
+      margin-bottom: 27px;
+    }
+  }
+  &__subText {
+    max-width: 391px;
+    font-size: 18px;
+    line-height: 144%;
+    margin-bottom: 38px;
+    color: #40494d;
+    @media screen and (max-width: 992px) {
+      font-size: 17px;
+    }
+    @media screen and (max-width: 768px) {
+      font-size: 16px;
+      margin-bottom: 28px;
+    }
+  }
+  &__more {
+    text-align: right;
+  }
+  &__moreLink {
+    padding-right: 20px;
+    color: #283337;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 200%;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
