@@ -17,6 +17,18 @@
       padding: 40px 0px;
     }
   }
+  &__results {
+    padding: 230px 0px 90px 0px;
+    @media screen and (max-width: 992px) {
+      padding: 190px 0px 70px 0px;
+    }
+    @media screen and (max-width: 768px) {
+      padding: 130px 0px 50px 0px;
+    }
+    @media screen and (max-width: 576px) {
+      padding: 60px 0px 30px 0px;
+    }
+  }
 }
 
 .heading {
@@ -280,6 +292,90 @@
     line-height: 200%;
     &:hover {
       text-decoration: underline;
+    }
+  }
+}
+
+.results {
+  background: #f3f7f4;
+  &__container {
+  }
+  &__body {
+    text-align: center;
+  }
+  &__label {
+    color: #283337;
+    font-size: 60px;
+    line-height: 100%;
+    font-family: "Times New Roman", Times, serif;
+    font-weight: 700;
+    margin-bottom: 76px;
+    @media screen and (max-width: 992px) {
+      font-size: 50px;
+      margin-bottom: 56px;
+    }
+    @media screen and (max-width: 768px) {
+      font-size: 40px;
+      margin-bottom: 46px;
+    }
+    @media screen and (max-width: 576px) {
+      font-size: 30px;
+      margin-bottom: 36px;
+    }
+  }
+  &__items {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: stretch;
+    @media screen and (max-width: 868px) {
+      flex-flow: row wrap;
+    }
+  }
+  &__item {
+    flex: 0 1 33.333%;
+    padding: 0px 30px;
+
+    @media screen and (max-width: 868px) {
+      flex: 1 1 50%;
+      padding: 0px 10px;
+      &:not(:last-child) {
+        margin-bottom: 50px;
+      }
+    }
+    @media screen and (max-width: 556px) {
+      flex: 1 1 100%;
+      padding: 0px 0px;
+      &:not(:last-child) {
+        margin-bottom: 40px;
+      }
+    }
+  }
+  &__subLabel {
+    color: #283337;
+    font-size: 52px;
+    line-height: 135%;
+    margin-bottom: 19px;
+
+    @media screen and (max-width: 992px) {
+      font-size: 40px;
+    }
+    @media screen and (max-width: 768px) {
+      font-size: 30px;
+    }
+    @media screen and (max-width: 576px) {
+      font-size: 20px;
+    }
+  }
+  &__text {
+    color: #40494d;
+    font-size: 16px;
+    line-height: 150%;
+    max-width: 220px;
+    margin: 0 auto;
+
+    @media screen and (max-width: 768px) {
+      font-size: 15px;
     }
   }
 }
